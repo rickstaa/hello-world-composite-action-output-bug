@@ -9,9 +9,9 @@ outputs:
   random-number:
     description: "Random number"
     value: ${{ steps.random-number-generator.outputs.random-number }}
-  random-number2:
-    description: "Random number2"
-    value: ${{ steps.random-number-generator.outputs.random-number2 }}
+  random-number-bash:
+    description: "Random number bash"
+    value: ${{ steps.random-number-generator-bash.outputs.random-number-bash }}
 runs:
   using: "composite"
   steps:
@@ -23,4 +23,5 @@ runs:
     - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
       shell: bash
     - run: goodbye.sh
+      id: random-number-generator-bash
       shell: bash
