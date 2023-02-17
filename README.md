@@ -1,3 +1,3 @@
 # hello-world-composite-action
-saf
-sdf
+
+Small little example repository for https://github.com/community/community/discussions/47775.
