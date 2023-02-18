@@ -1,2 +1,2 @@
 echo "Goodbye"
-echo "random-number-bash=test" >> $GITHUB_OUTPUT
+echo "random-number-bash=$(echo 123)" >> $GITHUB_OUTPUT
